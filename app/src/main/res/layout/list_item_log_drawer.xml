@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:id="@+id/list_item_logsLinearLayout"
+	android:orientation="vertical"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content">
+
+	<RelativeLayout
+		android:background="?attr/selectableItemBackground"
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		android:orientation="horizontal"
+		android:padding="3dp">
+
+		<TextView
+			android:id="@+id/textLog"
+			android:textColor="@color/colorText"
+			android:textSize="12sp"
+			android:fontFamily="monospace"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+		/>
+
+	</RelativeLayout>
+
+	<View
+		android:layout_width="fill_parent"
+		android:layout_height="1px"
+		android:background="@drawable/divider"
+	/>
+
+</LinearLayout>

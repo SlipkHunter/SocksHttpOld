@@ -1,0 +1,185 @@
+This file contains the license for SocksHttp, a free software project to
+provide anonymity on the Internet from a Google Android smartphone.
+
+It also lists the licenses for other components used by SocksHttp, including 
+Trilead SSH2, BadVpn Tun2Socks and Material Icons.
+
+If you got this file as a part of a larger bundle, there may be other
+license terms that you should be aware of.
+
+===============================================================================
+<strong>END-USER LICENSE AGREEMENT (EULA)</strong>
+<div id="legal">By downloading any application from SlipkProjects (here after referered to as "us"),
+installing or using this application (software) or any portion thereof (SocksHttp), you indicate your acceptance of these terms.
+If you do not accept these terms, do not install or use the software.
+
+The software (SocksHttp) and any updates to it are provided "as is" and you bear the risk of using it.
+
+<strong>NO LIABILITY FOR CONSEQUENTIAL DAMAGES</strong>
+In no event shall SlipkProjects (its officers, directors, employees or agents) be liable to you for any consequential, special, incidental or indirect damages of any kind arising out of the delivery, performance (including damages for loss of business profits, business interruption, loss of business information, lost savings, or other economic damage and the like) or use of the SOFTWARE.
+The author specifically disclaims all warranties, expressed or implied.
+
+This software was written with care, but no one warrants that the software is error-free.
+Your sole remedy for any failure or any form of damage caused by this software is a full refund of the license fee we have received from you, which in all cases is $0.
+
+You may distribute copies of the software to others, so long as this disclaimer accompanies said distribution, you do not represent the software as your own work, and you do not alter the software or the installation package in any way.
+
+You may not use this software in actions, which infringe any law of your country, international laws or entity.
+
+<strong>TECHNICAL SUPPORT</strong>
+SlipkProjects shall provide technical support at their own discretion, without any guarantees or declarations.
+
+<strong>OWNERSHIP</strong>
+The software is owned and copyrighted by SlipkProjects. Your license confers no title or ownership in the software and should not be construed as a sale of any right in the software.
+
+<strong>REVERSE ENGINEERING</strong>
+You may not decompile or otherwise reverse-engineer any part of the software.
+
+<strong>USE RESTRICTIONS</strong>
+You warrant that your use of this software is legal and does not violate any law or regulation to which you are subject.
+
+<strong>INDEMNIFICATION</strong>
+You hereby agree to indemnify, defend and hold us, our subsidiaries, parent corporation and affiliates, partners, sponsors and all of their respective officers, directors, owners, employees, agents, attorneys, licensors, representatives, licensees, and suppliers (collectively, "Parties"), harmless from and against any and all liabilities, losses, expenses, damages, and costs (including reasonable attorneys' fees), incurred by any of the Parties in connection with any claim arising out of your use of the Software or Services, any use or alleged use of your account by any person, whether or not authorized by you, your violation or breach of this Agreement or your violation of the rights of any other person or entity.
+
+******
+
+===============================================================================
+SocksHttp also includes Material Icons: https://github.com/google/material-design-icons
+
+Copyright 2020 Google Inc.
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+
+******
+
+===============================================================================
+SocksHttp also includes Trilead SSH-2: https://github.com/jenkinsci/trilead-ssh2
+
+ Copyright (c) 2007-2008 Trilead AG (http://www.trilead.com)
+
+All rights reserved.
+
+Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions
+are met:
+
+a.) Redistributions of source code must retain the above copyright
+    notice, this list of conditions and the following disclaimer.
+b.) Redistributions in binary form must reproduce the above copyright
+    notice, this list of conditions and the following disclaimer in the
+    documentation and/or other materials provided with the distribution.
+c.) Neither the name of Trilead nor the names of its contributors may
+    be used to endorse or promote products derived from this software
+    without specific prior written permission.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE
+LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
+SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
+CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
+ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGE.
+
+Trilead SSH-2 for Java includes code that was written by Dr. Christian Plattner
+during his PhD at ETH Zurich. The license states the following:
+
+Copyright (c) 2005 - 2006 Swiss Federal Institute of Technology (ETH Zurich),
+  Department of Computer Science (http://www.inf.ethz.ch),
+  Christian Plattner. All rights reserved.
+
+Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions
+are met:
+
+a.) Redistributions of source code must retain the above copyright
+    notice, this list of conditions and the following disclaimer.
+b.) Redistributions in binary form must reproduce the above copyright
+    notice, this list of conditions and the following disclaimer in the
+    documentation and/or other materials provided with the distribution.
+c.) Neither the name of ETH Zurich nor the names of its contributors may
+    be used to endorse or promote products derived from this software
+    without specific prior written permission.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE
+LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
+SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
+CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
+ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGE.
+
+The Java implementations of the AES, Blowfish and 3DES ciphers have been
+taken (and slightly modified) from the cryptography package released by
+"The Legion Of The Bouncy Castle".
+
+Their license states the following:
+
+Copyright (c) 2000 - 2004 The Legion Of The Bouncy Castle
+(http://www.bouncycastle.org)
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
+
+******
+
+===============================================================================
+SocksHttp also includes BadVPN tun2socks: https://github.com/ambrop72/badvpn
+
+Copyright (c) 2009, Ambroz Bizjak <ambrop7@gmail.com>
+All rights reserved.
+
+Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions are met:
+    * Redistributions of source code must retain the above copyright
+      notice, this list of conditions and the following disclaimer.
+    * Redistributions in binary form must reproduce the above copyright
+      notice, this list of conditions and the following disclaimer in the
+      documentation and/or other materials provided with the distribution.
+    * Neither the name of the author nor the
+      names of its contributors may be used to endorse or promote products
+      derived from this software without specific prior written permission.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
+ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+DISCLAIMED. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY
+DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+(INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND
+ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+===============================================================================

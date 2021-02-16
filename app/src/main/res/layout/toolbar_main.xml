@@ -1,0 +1,18 @@
+<android.support.design.widget.AppBarLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:layout_height="wrap_content"
+	android:layout_width="match_parent"
+	android:theme="@style/AppTheme.AppBarOverlay">
+
+	<android.support.v7.widget.Toolbar
+		android:id="@+id/toolbar_main"
+		android:theme="@style/ToolbarTheme"
+		android:background="?attr/colorPrimary"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:minHeight="?attr/actionBarSize"
+		app:titleTextAppearance="@style/Toolbar.TitleText"
+		app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+</android.support.design.widget.AppBarLayout>

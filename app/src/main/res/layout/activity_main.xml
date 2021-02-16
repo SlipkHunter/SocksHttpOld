@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:orientation="vertical"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+
+	<LinearLayout
+		android:id="@+id/activity_mainLinearLayout"
+		android:focusable="true"
+		android:focusableInTouchMode="true"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:paddingBottom="80dp"
+		android:orientation="vertical">
+
+		<LinearLayout
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			android:orientation="horizontal"
+			android:gravity="right"
+			android:padding="5dp">
+
+			<TextView
+				android:id="@+id/activity_mainAutorText"
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:text="Slipk Projects"
+				android:textStyle="bold"
+				android:textColor="#00BAFF"/>
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:gravity="center"
+			android:orientation="vertical"
+			android:layout_alignParentLeft="true"
+			android:layout_alignParentStart="true"
+			android:padding="10dp"
+			android:background="@drawable/background_rounded"
+			android:layout_marginRight="5dp"
+			android:layout_marginLeft="5dp">
+
+			<LinearLayout
+				android:id="@+id/activity_mainInputPasswordLayout"
+				android:layout_height="wrap_content"
+				android:layout_width="match_parent"
+				android:orientation="vertical"
+				android:gravity="center"
+				android:paddingTop="10dp"
+				android:paddingLeft="20dp"
+				android:paddingRight="20dp"
+				android:paddingBottom="5dp"
+				android:layout_gravity="center">
+
+				<LinearLayout
+					android:layout_height="wrap_content"
+					android:layout_width="match_parent"
+					android:orientation="horizontal"
+					android:gravity="center"
+					android:layout_marginBottom="10dp"
+					android:paddingBottom="10dp">
+
+					<TextView
+						android:layout_height="wrap_content"
+						android:layout_width="wrap_content"
+						android:text="@string/title_login_main"
+						android:textStyle="bold"
+						android:textSize="18sp"
+						android:textColor="@color/colorText"/>
+
+				</LinearLayout>
+
+				<android.support.design.widget.TextInputLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_gravity="center">
+
+					<android.support.design.widget.TextInputEditText
+						android:id="@+id/activity_mainInputPasswordUserEdit"
+						android:layout_height="wrap_content"
+						android:layout_width="match_parent"
+						android:ems="20"
+						android:singleLine="true"
+						android:drawableStart="@drawable/ic_person_black_24dp"
+						android:textColor="@color/colorText"
+						android:hint="@string/auth_username"/>
+
+				</android.support.design.widget.TextInputLayout>
+
+				<RelativeLayout
+					android:layout_height="wrap_content"
+					android:layout_width="match_parent"
+					android:layout_marginTop="4dp"
+					android:layout_marginLeft="4dp"
+					android:layout_marginRight="4dp"
+					android:layout_marginBottom="4dp"
+					android:orientation="horizontal">
+
+					<android.support.design.widget.TextInputLayout
+						android:id="@+id/fragment_userpassTextInputLayout"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content">
+
+						<android.support.design.widget.TextInputEditText
+							android:id="@+id/activity_mainInputPasswordPassEdit"
+							android:inputType="textPassword"
+							android:textColor="@color/colorText"
+							android:drawableStart="@drawable/ic_lock_black_24dp"
+							android:ems="20"
+							android:singleLine="true"
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:hint="@string/password"/>
+
+					</android.support.design.widget.TextInputLayout>
+
+					<LinearLayout
+						android:layout_height="wrap_content"
+						android:layout_width="wrap_content"
+						android:orientation="vertical"
+						android:layout_alignEnd="@id/fragment_userpassTextInputLayout">
+
+						<ImageButton
+							android:id="@+id/activity_mainInputShowPassImageButton"
+							android:src="@drawable/ic_visibility_off_black_24dp"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:hint="@string/show_password"
+							android:layout_gravity="right"/>
+
+					</LinearLayout>
+
+				</RelativeLayout>
+
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_height="wrap_content"
+				android:layout_width="match_parent"
+				android:orientation="horizontal">
+
+				<Button
+					android:id="@+id/activity_starterButtonMain"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginLeft="20dp"
+					android:layout_marginRight="20dp"
+					android:background="@drawable/button_blue"
+					android:textColor="#FFFFFF"
+					android:textStyle="bold"
+					android:text="@string/start"
+					android:layout_gravity="center"/>
+
+			</LinearLayout>
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:id="@+id/activity_mainInputPayloadLinearLayout"
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			android:orientation="vertical"
+			android:layout_marginTop="3dp"
+			android:background="@color/colorSecondaryBackground"
+			android:padding="10dp">
+
+			<android.support.design.widget.TextInputLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content">
+
+				<android.support.design.widget.TextInputEditText
+					android:id="@+id/activity_mainInputPayloadEditText"
+					android:inputType="textMultiLine|textLongMessage"
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:ems="20"
+					android:textColor="@color/colorText"
+					android:hint="@string/payload"/>
+
+			</android.support.design.widget.TextInputLayout>
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:id="@+id/activity_mainMetodoConexaoLayout"
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			android:orientation="vertical"
+			android:background="@color/colorSecondaryBackground"
+			android:gravity="center"
+			android:padding="5dp"
+			android:layout_marginTop="3dp">
+
+			<TextView
+				android:id="@+id/activity_mainMetodoConexaoText"
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:text="@string/method_connection"
+				android:textStyle="bold"/>
+
+			<!--<Spinner
+				android:id="@+id/activity_mainTunnelTypeSpinner"
+				android:layout_height="wrap_content"
+				android:layout_width="match_parent"
+				android:spinnerMode="dropdown"
+				android:layout_marginRight="20dp"
+				android:layout_marginLeft="20dp"/>-->
+
+			<RadioGroup
+				android:id="@+id/activity_mainMetodoConexaoRadio"
+				android:layout_height="wrap_content"
+				android:layout_width="match_parent"
+				android:orientation="horizontal"
+				android:breakStrategy="balanced"
+				android:gravity="center">
+
+				<android.support.v7.widget.AppCompatRadioButton
+					android:id="@+id/activity_mainSSHDirectRadioButton"
+					android:layout_height="wrap_content"
+					android:layout_width="wrap_content"
+					android:hint="SSH DIRECT"
+					android:padding="5dp"/>
+
+				<android.support.v7.widget.AppCompatRadioButton
+					android:id="@+id/activity_mainSSHProxyRadioButton"
+					android:layout_height="wrap_content"
+					android:layout_width="wrap_content"
+					android:hint="SSH + PROXY"/>
+
+			</RadioGroup>
+
+			<android.support.v7.widget.SwitchCompat
+				android:id="@+id/activity_mainCustomPayloadSwitch"
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:hint="Custom Payload"
+				android:layout_gravity="right"/>
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:id="@+id/activity_mainInputProxyLayout"
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			android:orientation="horizontal"
+			android:background="@color/colorSecondaryBackground"
+			android:padding="5dp"
+			android:layout_marginTop="3dp"
+			android:visibility="visible"
+			android:gravity="center_horizontal">
+
+			<LinearLayout
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:orientation="vertical"
+				android:paddingRight="10dp"
+				android:paddingLeft="10dp"
+				android:layout_gravity="start">
+
+				<TextView
+					android:layout_height="wrap_content"
+					android:layout_width="wrap_content"
+					android:text="@string/proxy_remote"
+					android:textStyle="bold"/>
+
+				<TextView
+					android:id="@+id/activity_mainProxyText"
+					android:layout_height="wrap_content"
+					android:layout_width="wrap_content"
+					android:text="@string/no_value"/>
+
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_height="match_parent"
+				android:layout_width="fill_parent"
+				android:orientation="vertical"
+				android:layout_gravity="right">
+
+				<ImageView
+					android:layout_height="match_parent"
+					android:layout_width="30dp"
+					android:src="@drawable/ic_mode_edit_black_48dp"
+					android:layout_gravity="end"/>
+
+			</LinearLayout>
+
+		</LinearLayout>
+
+		<com.google.android.gms.ads.AdView
+			xmlns:ads="http://schemas.android.com/apk/res-auto"
+			android:id="@+id/adBannerMainView"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_centerHorizontal="true"
+			android:layout_alignParentBottom="true"
+			android:layout_marginTop="3dp"
+			android:visibility="gone"
+			ads:adSize="BANNER"
+			ads:adUnitId="ca-app-pub-6560862030501171/3101206569"
+			android:layout_gravity="center">
+
+		</com.google.android.gms.ads.AdView>
+
+		<LinearLayout
+			android:id="@+id/activity_mainMensagemConfigLinearLayout"
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			android:orientation="vertical"
+			android:layout_margin="5dp"
+			android:background="@drawable/background_rounded"
+			android:padding="10dp"
+			android:visibility="gone">
+
+			<TextView
+				android:id="@+id/activity_mainMensagemConfigTextView"
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:autoLink="web"/>
+
+		</LinearLayout>
+
+	</LinearLayout>
+
+</ScrollView>
+

@@ -1,0 +1,21 @@
+global {
+	perm_cache=1024;
+	cache_dir="%2$s";
+	server_port = %4$d;
+	server_ip = %3$s;
+	query_method=tcp_only;
+	min_ttl=15m;
+	max_ttl=1w;
+	timeout=10;
+	daemon=off;
+}
+
+%1$s
+
+rr {
+	name=localhost;
+	reverse=on;
+	a=127.0.0.1;
+	owner=localhost;
+	soa=localhost,root.localhost,42,86400,900,86400,86400;
+}

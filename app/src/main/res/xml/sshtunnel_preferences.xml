@@ -1,0 +1,64 @@
+<android.support.v7.preference.PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android">
+	
+
+	<android.support.v7.preference.PreferenceCategory
+		android:title="SSH Tunnel">
+		
+		<com.slipkprojects.sockshttp.view.SummaryEditTextPreference
+            android:key="sshServer"
+            android:title="@string/ssh_server"
+            android:summary="@string/no_value"
+            android:dialogMessage=""
+			android:singleLine="true"
+			android:dialogLayout="@layout/pref_dialog_edittext_fix" />
+
+		<com.slipkprojects.sockshttp.view.SummaryEditTextPreference
+            android:maxLength="5"
+            android:key="sshPort"
+            android:title="@string/ssh_port"
+			android:summary="@string/no_value"
+			android:singleLine="true"
+			android:dialogLayout="@layout/pref_dialog_number" />
+	
+	</android.support.v7.preference.PreferenceCategory>
+	
+		
+	<android.support.v7.preference.PreferenceCategory
+		android:title="@string/title_auth">
+			
+		<com.slipkprojects.sockshttp.view.SummaryEditTextPreference
+            android:key="sshUser"
+            android:title="@string/auth_username"
+            android:summary="@string/no_value"
+            android:dialogMessage=""
+			android:singleLine="true"
+			android:dialogLayout="@layout/pref_dialog_edittext_fix" />
+		
+		<com.slipkprojects.sockshttp.view.PasswordEditTextPreference
+            android:key="sshPass"
+            android:title="@string/password"
+            android:summary="@string/no_value"
+            android:dialogMessage=""
+			android:singleLine="true"
+			android:dialogLayout="@layout/pref_dialog_edittext_fix" />
+		
+	</android.support.v7.preference.PreferenceCategory>
+
+	
+	<android.support.v7.preference.PreferenceCategory
+		android:title="@string/category_forward_port">
+
+		<com.slipkprojects.sockshttp.view.SummaryEditTextPreference
+            android:maxLength="5"
+            android:key="sshPortaLocal"
+            android:title="@string/ssh_porta_local"
+            android:summary="1080"
+            android:defaultValue="1080"
+			android:singleLine="true"
+			android:dialogLayout="@layout/pref_dialog_number" />
+
+	</android.support.v7.preference.PreferenceCategory>
+	
+	
+</android.support.v7.preference.PreferenceScreen>

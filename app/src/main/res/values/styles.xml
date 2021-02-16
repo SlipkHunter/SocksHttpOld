@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+	
+	
+	<!-- Style geral do app -->
+    <style name="AppTheme" parent="Theme.AppCompat.DayNight.NoActionBar">
+		<item name="colorPrimary">@color/colorPrimary</item>
+		<item name="colorPrimaryDark">@color/colorSecondary</item>
+		<item name="colorAccent">@color/colorAccent</item>
+		<item name="preferenceTheme">@style/AppPreference</item>
+		<item name="alertDialogTheme">@style/AppAlertDialog</item>
+		
+		<!--<item name="android:textColorPrimary">@color/textColorPrimary</item>
+		<item name="android:textColorSecondary">@color/textColorSecondary</item>-->
+		<item name="android:textColor">@color/colorText</item>
+		<item name="android:textColorHint">@color/colorText</item>
+		<item name="android:navigationBarColor" tools:targetApi="21">@color/colorSecondary</item>
+		
+		<item name="buttonTint">@color/colorText</item>
+	</style>
+	
+	<!-- Alert Dialog -->
+	<style name="AppAlertDialog"
+        parent="Theme.AppCompat.Light.Dialog.Alert">
+		<item name="colorAccent">@color/colorAccent</item>
+		<item name="android:textColor">@color/colorText</item>
+		<item name="android:textColorHint">@color/colorText</item>
+		<item name="buttonTint">@color/colorText</item>
+	</style>
+	
+	
+	<!-- Preference Theme -->
+	<style name="AppPreference"
+        parent="PreferenceThemeOverlay">
+	</style>
+	
+	
+	<!-- Toolbar theme -->
+	<style name="ToolbarTheme" parent="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+		<!-- android:textColorPrimary is the color of the title text in the Toolbar  -->
+		<item name="android:textColorPrimary">@color/white</item>
+		<!-- actionMenuTextColor is the color of the text of action (menu) items  -->
+		<item name="actionMenuTextColor">@android:color/holo_green_light</item>
+		<!-- Tints the input fields like checkboxes and text fields -->
+		<item name="colorAccent">@color/gray</item>
+		<!-- Applies to views in their normal state. -->
+		<item name="colorControlNormal">@color/white</item>
+		<!-- Applies to views in their activated state (i.e checked or switches) -->
+		<item name="colorControlActivated">@color/blue_light</item>
+		<!-- Applied to framework control highlights (i.e ripples or list selectors) -->
+		<item name="colorControlHighlight">@color/gray_light</item>
+
+		<!-- Enable these below if you want clicking icons to trigger a ripple effect -->
+		<!-- 
+		<item name="selectableItemBackground">?android:selectableItemBackground</item>
+		<item name="selectableItemBackgroundBorderless">?android:selectableItemBackground</item> 
+		-->
+	</style>
+	
+	<!-- Necessario para o modo noturno-->
+	<style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+	<style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
+	
+	<style name="Toolbar.TitleText" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+		<item name="android:textColor">@color/white</item>
+		<item name="android:textSize">21sp</item>
+		<item name="android:textStyle">italic</item>
+	</style>
+		
+	<!-- Style for Splash Screen -->
+    <style name="SplashScreenTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+		<item name="colorPrimaryDark">@color/colorSecondary</item>
+		<item name="colorAccent">@color/colorAccent</item>
+		<item name ="android:windowBackground">@drawable/splash_screen_background</item>
+		<item name="android:navigationBarColor" tools:targetApi="21">@color/colorSecondary</item>
+    </style>
+	
+	
+</resources>

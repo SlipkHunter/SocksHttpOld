@@ -1,0 +1,112 @@
+<android.support.v7.preference.PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:key="screenMain">
+	
+
+	<android.support.v7.preference.PreferenceCategory
+		android:title="@string/category_tunnel">
+		
+		<android.support.v7.preference.Preference
+            android:key="screenSSHSettings"
+			app:fragment="com.slipkprojects.sockshttp.preference.SettingsSSHPreference"
+            android:title="@string/settings_ssh"/>
+
+	</android.support.v7.preference.PreferenceCategory>
+    
+	
+	<android.support.v7.preference.PreferenceCategory
+		android:title="@string/category_forward_udp">
+
+		<android.support.v7.preference.CheckBoxPreference
+			android:key="udpForward"
+			android:summary="@string/summary_forward_udp"
+			android:title="@string/title_forward_udp" />
+
+		<com.slipkprojects.sockshttp.view.SummaryEditTextPreference
+            android:key="udpResolver"
+            android:title="@string/title_resolver_udp"
+            android:summary="@string/summary_resolver_udp"
+            android:dialogMessage=""
+			android:singleLine="true"
+			android:dialogLayout="@layout/pref_dialog_edittext_fix" />
+
+	</android.support.v7.preference.PreferenceCategory>
+	
+	
+	<android.support.v7.preference.PreferenceCategory
+		android:title="@string/category_forward_dns">
+		
+		<android.support.v7.preference.CheckBoxPreference
+			android:key="dnsForward"
+			android:summary="@string/summary_forward_dns"
+			android:title="@string/title_forward_dns" />
+		
+		<com.slipkprojects.sockshttp.view.SummaryEditTextPreference
+            android:key="dnsResolver"
+            android:title="@string/title_dns_primary"
+            android:summary="@string/summary_dns_primary"
+            android:dialogMessage="@string/dialog_message_dns_primary"
+			android:singleLine="true"
+			android:dialogLayout="@layout/pref_dialog_edittext_fix" />
+		
+	</android.support.v7.preference.PreferenceCategory>
+	
+	
+	<android.support.v7.preference.PreferenceCategory
+		android:title="@string/category_settings_adicionais">
+		
+		<android.support.v7.preference.ListPreference
+        	android:key="modeNight"
+			android:defaultValue="off"
+        	android:entries="@array/pref_modoNoturno_option_labels"
+        	android:entryValues="@array/pref_modoNoturno_option_values"
+        	android:title="@string/title_mode_night"
+		/>
+		
+		<com.slipkprojects.sockshttp.view.SummaryEditTextPreference
+            android:key="pingerSSH"
+            android:title="@string/title_ping_time"
+			android:maxLength="3"
+            android:summary="@string/no_value"
+			android:singleLine="true"
+			android:dialogLayout="@layout/pref_dialog_number"
+		/>
+		
+		<android.support.v7.preference.CheckBoxPreference
+			android:key="autoClearLogs"
+			android:summary="@string/summary_auto_clear_log"
+			android:title="@string/title_auto_clear_log"
+		/>
+
+		<android.support.v7.preference.CheckBoxPreference
+			android:key="hideLog"
+			android:summary="@string/summary_hide_log"
+			android:title="@string/title_hide_log"
+		/>
+		
+	</android.support.v7.preference.PreferenceCategory>
+	
+	
+	<android.support.v7.preference.PreferenceCategory
+		android:title="@string/category_user_interface">
+	
+		<android.support.v7.preference.ListPreference
+        	android:key="idioma"
+			android:defaultValue="default"
+        	android:entries="@array/pref_idioma_option_labels"
+        	android:entryValues="@array/pref_idioma_option_values"
+        	android:title="@string/title_language"
+		/>
+		
+	</android.support.v7.preference.PreferenceCategory>
+	
+	
+	<android.support.v7.preference.Preference
+    	android:key="screenAdvancedSettings"
+		app:fragment="com.slipkprojects.sockshttp.preference.SettingsAdvancedPreference"
+        android:title="@string/category_advanced_settings"
+	/>
+	
+	
+</android.support.v7.preference.PreferenceScreen>

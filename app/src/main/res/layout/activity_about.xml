@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+
+	<include
+		layout="@layout/toolbar_main"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"/>
+
+	<ScrollView
+		android:orientation="vertical"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent">
+
+		<LinearLayout
+			android:orientation="vertical"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:background="@color/colorSecondaryBackground"
+			android:paddingLeft="15dp"
+			android:paddingRight="15dp">
+
+			<TextView
+				android:text="@string/wizard_details"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:paddingTop="15px"
+				android:textStyle="bold"
+				android:textColor="#386BDD"/>
+
+			<TextView
+				android:text="@string/wizard_details_msg"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:autoLink="web"
+				android:textColorLink="@color/colorText"
+				android:textColor="@color/colorText"/>
+
+			<TextView
+				android:text="@string/payload_details"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:paddingTop="15px"
+				android:textStyle="bold"
+				android:textColor="#386BDD"/>
+
+			<TextView
+				android:text="@string/payload_details_msg"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:textColor="@color/colorText"/>
+
+			<TextView
+				android:text="Version: "
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:paddingTop="15px"
+				android:textStyle="bold"
+				android:textColor="#314EDB"/>
+
+			<TextView
+				android:text="- Unknown -"
+				android:id="@+id/versionName"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:layout_gravity="center_vertical"
+				android:textColor="@color/colorText"/>
+
+			<TextView
+				android:text="@string/project_home"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:paddingTop="15px"
+				android:textStyle="bold"
+				android:textColor="#2C3EC5"/>
+
+			<TextView
+				android:text="@string/project_urls"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:autoLink="web"
+				android:textColorLink="#C82217"
+				android:textColor="@color/colorText"/>
+
+			
+			<TextView
+				android:text="@string/third_party_software"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:paddingTop="15px"
+				android:textStyle="bold"
+				android:textColor="#344FDB"/>
+
+			<TextView
+				android:text="@string/jsocks_version"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:autoLink="web"
+				android:textColorLink="@color/colorText"
+				android:textColor="@color/colorText"/>
+
+			<TextView
+				android:text="@string/trileadssh2_version"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:autoLink="web"
+				android:textColorLink="@color/colorText"
+				android:textColor="@color/colorText"/>
+
+			<LinearLayout
+				android:layout_height="wrap_content"
+				android:layout_width="match_parent"
+				android:orientation="vertical"
+				android:paddingTop="15px">
+
+				<TextView
+					android:text="Outros:"
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:textStyle="bold"
+					android:textColor="#2E4AC5"/>
+
+				<Button
+					android:id="@+id/activity_aboutShowLicenseButton"
+					android:layout_height="wrap_content"
+					android:layout_width="wrap_content"
+					android:text="@string/show_license"/>
+
+			</LinearLayout>
+			
+			<TextView
+				android:text="@string/title_agradecimento_especial"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:paddingTop="15px"
+				android:textStyle="bold"
+				android:textColor="#2C3EC5"/>
+
+			<TextView
+				android:id="@+id/activity_aboutAgradecimentosTextView"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:autoLink="web"
+				android:textColorLink="#C82217"
+				android:textColor="@color/colorText"/>
+
+			<com.google.android.gms.ads.AdView
+				xmlns:ads="http://schemas.android.com/apk/res-auto"
+				android:id="@+id/adBannerSecondView"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_alignParentBottom="true"
+				ads:adSize="BANNER"
+				ads:adUnitId="ca-app-pub-6560862030501171/6860519994"
+				android:layout_gravity="center"
+				android:layout_centerHorizontal="true"
+				android:layout_marginTop="5dp">
+
+			</com.google.android.gms.ads.AdView>
+
+		</LinearLayout>
+
+	</ScrollView>
+
+</LinearLayout>
+

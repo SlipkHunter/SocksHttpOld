@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.slipkprojects.sockshttp">
+	
+	
+	<!--- Permissions -->
+
+	<uses-permission android:name="android.permission.INTERNET"/>
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+	<uses-permission android:name="android.permission.INTERNET" />
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+	
+	
+	<!--- Application -->
+		
+    <application
+		android:name=".SocksHttpApp"
+		android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme"
+		android:resizeableActivity="true">
+		
+		
+		<!--- Activities -->
+			
+		<activity android:name=".LauncherActivity"
+            android:theme="@style/SplashScreenTheme" 
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+		
+		<activity android:name=".SocksHttpMainActivity"
+			android:label="@string/app_name"/>
+		
+		<activity android:name=".activities.ConfigGeralActivity"
+			android:parentActivityName=".SocksHttpMainActivity"
+            android:label="@string/settings"/>
+		
+		<activity android:name=".activities.ConfigImportFileActivity"
+			android:grantUriPermissions="true"
+			android:parentActivityName=".SocksHttpMainActivity"
+			android:label="@string/settings_import">
+			<intent-filter>
+				<action android:name="android.intent.action.VIEW" />
+				<category android:name="android.intent.category.DEFAULT" />
+				<category android:name="android.intent.category.BROWSABLE" />
+				<data android:scheme="file" />
+				<data android:scheme="content" />
+				<data android:mimeType="*/*" />
+				<data android:host="*" />
+				<data android:port="*" />
+				<data android:pathPattern=".*.sks"/>
+				<data android:pathPattern=".*..*.sks"/>
+				<data android:pathPattern=".*..*..*.sks"/>
+				<data android:pathPattern=".*..*..*..*.sks"/>
+				<data android:pathPattern=".*..*..*..*..*.sks"/>
+				<data android:pathPattern=".*..*..*..*..*..*.sks"/>
+				<data android:pathPattern=".*..*..*..*..*..*..*.sks"/>
+			</intent-filter>
+		</activity>
+	
+		<activity android:name=".activities.ConfigExportFileActivity"
+			android:parentActivityName=".SocksHttpMainActivity"
+			android:label="@string/settings_export"/>
+		
+		<activity android:name=".activities.AboutActivity"
+			android:parentActivityName=".SocksHttpMainActivity"
+            android:label="@string/about"/>
+		
+		
+		<!--- Meta Data -->
+
+		<meta-data android:name="com.google.android.gms.ads.APPLICATION_ID"
+			android:value="ca-app-pub-6560862030501171~4855419162"/>
+		<meta-data android:name="com.google.android.gms.ads.AD_MANAGER_APP"
+			android:value="true" />
+		
+		
+		<!-- corrige bug em Android 9 -->
+		<uses-library
+			android:name="org.apache.http.legacy"
+			android:required="false" />
+		
+		
+    </application>
+
+	
+</manifest>

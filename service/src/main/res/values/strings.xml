@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<string name="app_name">SocksHttp</string>
+    <string name="app_description">SocksHttp é um cliente SSH TÚNNEL, feito para burlar bloqueios locais e censura na rede.</string>
+	
+	<string name="attention">Atenção</string>
+    <string name="cancel">Cancelar</string>
+	<string name="ok">OK</string>
+	<string name="exit">Sair</string>
+	<string name="error_request_permission">Você necessita de acesso ao Armazenamento Externo</string>
+	
+	<string name="importing_settings">Importando configuração</string>
+	<string name="log_settings_valid">Arquivo válido até: %1$s</string>
+	<string name="log_server_banner">Mensagem do Servidor:</string>
+	<string name="log_conection_lost">Conexão perdida</string>
+	
+	
+	<string name="start">Iniciar</string>
+	<string name="stop">Parar</string>
+	<string name="reconnect">Reconectar</string>
+	
+	<string name="stopping_service_ssh">Parando Serviço SSH</string>
+	<string name="starting_service_ssh">Iniciando Serviço SSH</string>
+	
+	<string name="title_auth">Autenticação</string>
+	<string name="auth_message">Complete com os dados da conta SSH</string>
+	<string name="auth_username">Nome de usuário</string>
+	<string name="password">Senha</string>
+	<string name="show_password">Mostrar senha</string>
+	<string name="save_password">Salvar senha</string>
+	
+	
+	<string name="channel_name_background">Connection statistics</string>
+    <string name="channel_description_background">Ongoing statistics of the established SocksHttp connection</string>
+    <string name="channel_name_status">Connection status change</string>
+    <string name="channel_description_status">Status changes of the SocksHttp connection (Connecting, authenticating,…)</string>
+	<string name="channel_name_userreq">User interaction required</string>
+    <string name="channel_description_userreq">SocksHttp connection requires a user input, e.g. two factor authentification</string>
+	
+	<string name="state_starting">Iniciando</string>
+	<string name="state_connecting">Conectando</string>
+    <string name="state_wait">Aguardando pôr resposta do servidor</string>
+    <string name="state_auth">Autenticando</string>
+	<string name="state_auth_success">Autenticado</string>
+    <string name="state_get_config">Getting client configuration</string>
+    <string name="state_assign_ip">Assigning IP addresses</string>
+    <string name="state_add_routes">Adding routes</string>
+    <string name="state_connected">Conectado</string>
+    <string name="state_disconnected">Desconectado</string>
+    <string name="state_reconnecting">Reconectando</string>
+    <string name="state_stopping">Parando</string>
+    <string name="state_noprocess">Not running</string>
+    <string name="state_resolve">Resolving host names</string>
+    <string name="state_tcp_connect">Conectando (TCP)</string>
+    <string name="state_auth_failed">Authentication failed</string>
+    <string name="state_nonetwork">Aguardando pôr rede</string>
+    <string name="state_waitconnectretry">Waiting %ss seconds between connection attempt</string>
+    <string name="state_auth_pending">Waiting for Autentication</string>
+    <string name="state_user_vpn_password" translatable="false">Waiting for user VPN password</string>
+	<string name="state_user_vpn_permission" translatable="false">Waiting for user permission to use VPN API</string>
+	<string name="state_user_vpn_password_cancelled" translatable="false">VPN password input dialog cancelled</string>
+    <string name="state_user_vpn_permission_cancelled" translatable="false">VPN API permission dialog cancelled</string>
+    <string name="unknown_state">Status Desconhecido</string>
+	<string name="nought_alwayson_warning"><![CDATA[If you did not get a VPN confirmation dialog, you have \"Always on VPN\" enabled for another app. In that case only that app is allowed to connect to a VPN. Check under Settings-> Networks more .. -> VPNS]]></string>
+	<string name="no_vpn_support_image">Your image does not support the VPNService API, sorry :(</string>
+    <string name="state_proxy_running">Proxy em execução</string>
+	<string name="state_proxy_inject">Injetando</string>
+	
+	<string name="mobile_info">Rodando no %3$s %1$s (%2$s), Android %5$s API %4$d</string>
+	<string name="app_mobile_info">Versão do Aplicativo: %1$s %2$s</string>
+	
+	<string name="alert_update_app">Instale a versão mais recente</string>
+	<string name="error_settings_expired">Arquivo expirado</string>
+	<string name="error_file_settings_invalid">Configuração inválida</string>
+	<string name="error_file_invalid">Arquivo Inválido</string>
+	<string name="error_internet_off">Por favor, conecte-se a internet</string>
+	<string name="error_empty_payload">A payload não pode ficar vazia</string>
+	<string name="error_empty_settings">Configure corretamente para iniciar</string>
+	<string name="error_proxy_invalid">Proxy inválido</string>
+	<string name="error_server_ip_invalid">Servidor/IP inválido</string>
+	<string name="error_root_detected">Configuração bloqueada para dispositivos com acesso root</string>
+	<string name="error_vpn_sniffer_detected">Outro aplicativo VPN em execução foi detectado, pare ele antes</string>
+	<string name="error_save_settings">Não foi possível salvar configuração</string>
+	
+</resources>

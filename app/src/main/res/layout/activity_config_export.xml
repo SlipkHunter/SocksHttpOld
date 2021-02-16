@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical">
+
+	<include
+		layout="@layout/toolbar_main"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"/>
+
+	<ScrollView
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:gravity="top|center"
+		android:background="@color/colorPrimaryBackground"
+		android:padding="5dp">
+
+		<LinearLayout
+			android:id="@+id/activity_config_exportMainLinearLayout"
+			android:layout_height="match_parent"
+			android:layout_width="match_parent"
+			android:focusable="true"
+			android:focusableInTouchMode="true"
+			android:orientation="vertical"
+			android:padding="10dp">
+
+			<LinearLayout
+				android:layout_height="wrap_content"
+				android:layout_width="match_parent"
+				android:orientation="vertical"
+				android:background="@drawable/background_rounded"
+				android:padding="5dp">
+
+				<android.support.design.widget.TextInputLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content">
+
+					<android.support.design.widget.TextInputEditText
+						android:id="@+id/activity_config_exportNomeEdit"
+						android:layout_height="wrap_content"
+						android:layout_width="match_parent"
+						android:textColor="@color/colorText"
+						android:hint="@string/name_file"
+						android:ems="10"/>
+
+				</android.support.design.widget.TextInputLayout>
+
+				<Button
+					android:id="@+id/activity_config_exportButton"
+					android:layout_height="wrap_content"
+					android:layout_width="wrap_content"
+					android:layout_gravity="right"
+					android:background="@drawable/button_blue"
+					android:textColor="#FFFFFF"
+					android:text="@string/export_button"/>
+
+			</LinearLayout>
+
+			<TextView
+				android:layout_height="wrap_content"
+				android:layout_width="match_parent"
+				android:text="@string/title_security"
+				android:textStyle="bold"
+				android:background="@color/colorSecondaryBackground"
+				android:layout_marginTop="5dp"
+				android:padding="5dp"/>
+
+			<android.support.v7.widget.AppCompatCheckBox
+				android:id="@+id/activity_config_exportProtegerCheck"
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:textColor="@color/colorText"
+				android:hint="@string/check_protect"
+				android:layout_marginTop="3dp"/>
+
+			<LinearLayout
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:orientation="vertical"
+				android:layout_marginTop="5dp">
+
+				<TextView
+					android:layout_height="wrap_content"
+					android:layout_width="match_parent"
+					android:text="@string/title_extra"
+					android:textStyle="bold"
+					android:background="@color/colorSecondaryBackground"
+					android:padding="5dp"/>
+
+				<android.support.v7.widget.AppCompatCheckBox
+					android:id="@+id/activity_config_exportBlockRootCheck"
+					android:layout_height="wrap_content"
+					android:layout_width="match_parent"
+					android:textColor="@color/colorText"
+					android:layout_marginBottom="5dp"
+					android:hint="@string/check_block_root"/>
+
+				<android.support.v7.widget.AppCompatCheckBox
+					android:id="@+id/activity_config_exportShowLoginScreenCheck"
+					android:layout_height="wrap_content"
+					android:layout_width="match_parent"
+					android:textColor="@color/colorText"
+					android:layout_marginBottom="5dp"
+					android:hint="@string/check_show_login_start"/>
+
+				<LinearLayout
+					android:layout_height="wrap_content"
+					android:layout_width="match_parent"
+					android:orientation="horizontal"
+					android:paddingBottom="5dp">
+
+					<android.support.v7.widget.AppCompatCheckBox
+						android:id="@+id/activity_config_exportValidadeCheck"
+						android:layout_height="wrap_content"
+						android:layout_width="wrap_content"
+						android:textColor="@color/colorText"
+						android:hint="@string/check_date_valid"/>
+
+					<TextView
+						android:id="@+id/activity_config_exportValidadeText"
+						android:layout_height="match_parent"
+						android:layout_width="wrap_content"
+						android:text="(Unknown)"
+						android:textStyle="bold"
+						android:gravity="center"
+						android:layout_marginLeft="5dp"
+						android:visibility="invisible"/>
+
+				</LinearLayout>
+
+				<android.support.design.widget.TextInputLayout
+					android:id="@+id/activity_config_exportLayoutMensagemEdit"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content">
+
+					<android.support.design.widget.TextInputEditText
+						android:id="@+id/activity_config_exportMensagemEdit"
+						android:inputType="textMultiLine|textLongMessage"
+						android:layout_width="fill_parent"
+						android:layout_height="wrap_content"
+						android:gravity="top|left"
+						android:ems="20"
+						android:textColor="@color/colorText"
+						android:hint="@string/input_note_msg"/>
+
+				</android.support.design.widget.TextInputLayout>
+
+			</LinearLayout>
+
+		</LinearLayout>
+
+	</ScrollView>
+
+</LinearLayout>
+

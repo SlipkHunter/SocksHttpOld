@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools"
+  tools:ignore="MissingTranslation">
+	
+    <string name="app_name">SocksHttp</string>
+	
+	<string name="about">Sobre</string>
+	<string name="config">Configuración</string>
+	<string name="settings">Configuraciones</string>
+	<string name="settings_ssh">Configuraciones SSH</string>
+	<string name="network_mobile">Red móvil</string>
+	<string name="method_connection">Método de conexión</string>
+	<string name="rate_app">Calificar</string>
+	<string name="feedback">Feedback</string>
+	<string name="first_start_msg">Esta aplicación fue desarrollada para usuarios avanzados, tenga esto en cuenta al usarla.</string>
+	<string name="title_login_main">Detalles de Login</string>
+	
+	<!-- Preference -->
+	<string name="category_forward_udp">Redireccionamiento de Udp</string>
+	<string name="title_forward_udp">Redireccionar UDP</string>
+	<string name="summary_forward_udp">Se activo redirecionamiento para el servidor remoto. Si no, UDP no funcionara.</string>
+	<string name="title_resolver_udp">Udp Gateway (remoto)</string>
+	<string name="summary_resolver_udp">Default (7300)</string>
+	<string name="category_forward_dns">Redireccionamiento de Dns</string>
+	<string name="title_forward_dns">Redireccionar DNS</string>
+	<string name="summary_forward_dns">Si activo, redireciona as requisições para o servidor remoto. Si no, seran utilizadas las DNS por el sistema local.</string>
+	<string name="title_dns_primary">Dns Primario</string>
+	<string name="summary_dns_primary">Default (1.1.1.1)</string>
+	<string name="dialog_message_dns_primary">Escriba la IP de DNS</string>
+	<string name="category_advanced_settings">Configuraciones Avanzadas</string>
+	<string name="title_hide_log">Ocultar Registro al Iniciar</string>
+	<string name="summary_hide_log">Si activo el log no será mostrado automaticamente.</string>
+	<string name="title_auto_clear_log">Limpiar Registros Automáticamente</string>
+	<string name="summary_auto_clear_log">Si activo los Registros se borraran automáticamente.</string>
+	<string name="category_forward_port">Redirecionamiento de Puerto</string>
+	<string name="title_mode_debug">Modo de depuración</string>
+	<string name="summary_mode_debug">Permite ver informaciones más avanzadas de los Registros.</string>
+	<string name="title_number_max_threads">Número máximo de Threads</string>
+	<string name="summary_number_max_threads">Cuanto mayor sea el número de Threads mayor será el consumo de energia y la velocidad de conexión en su dispositivo.</string>
+	<string name="category_filter_apps">Filtro de apps</string>
+	<string name="title_filter_apps">Filtrar apps</string>
+	<string name="title_bypass_mode">Bypass Mode</string>
+	<string name="summary_bypass_modo">Si activo, o tráfico de las aplicaticiones selecionadas sera enviada directamente.</string>
+	<string name="title_apps_list">Lista de Apps</string>
+	<string name="summary_apps_list">Escriba un nombre de paquete por línea. Vea en Configuraciones -> Apps para el nombre de paquete de apps.</string>
+	<string name="category_settings_adicionais">Configuraciones adicionales</string>
+	<string name="title_mode_night">Modo Nocturno (beta)</string>
+	<string name="title_ping_time">Ping (segundos)</string>
+	<string name="category_user_interface">Interface de Usuario</string>
+	<string name="title_language">Idioma</string>
+	<string name="category_tunnel">Túnnel</string>
+	
+	<string name="ssh_server">Servidor</string>
+	<string name="ssh_port">Puerta</string>
+	<string name="ssh_porta_local">Puerto local (Socks5)</string>
+	<string name="payload">Texto de conexión</string>
+	<string name="proxy_remote">Proxy Remoto</string>
+	<string name="proxy_ip">Proxy IP/Host</string>
+	<string name="proxy_port">Puerta</string>
+	<string name="proxy_auth">Autenticación de Proxy</string>
+	<string name="proxy_user">Usuario</string>
+	<string name="proxy_pass">Contraseña</string>
+	<string name="dir_name">Pasta</string>
+	
+	<string name ="alert_exit">Esta seguro/a que desea salir?</string>
+	<string name="alert_clear_settings">Está seguro/a de restaurar las configuraciones predeterminadas?</string>
+	<string name="no_value">Vacío</string>
+	<string name="blocked">Bloqueado</string>
+	<string name="expired">Expirado</string>
+	<string name="title_delete_file">Excluír Archivo</string>
+	<string name="alert_delete_file">Usted desea excluír ese archivo?</string>
+	<string name="dir_home_name">Memoria Interna</string>
+	<string name="select_file_setting">Selecione el archivo</string>
+	<string name="title_permission_request">Conceder Permisos</string>
+	<string name="message_permission_request">Por favor, es necesario conceder a permisos necesarios para que la aplicación funcione correctamente.</string>
+	<string name="show_license">Ver Licencias</string>
+	
+	<!--- export settings -->
+	<string name="name_file">Nombre de archivo</string>
+	<string name="export_button">Exportar</string>
+	<string name="title_security">Seguridad/Bloqueio</string>
+	<string name="check_protect">Bloquear Configuración y bloquear su edición</string>
+	<string name="title_extra">Extra</string>
+	<string name="check_block_root">Bloquear Root</string>
+	<string name="check_show_login_start">Mostrar Login en Inicio</string>
+	<string name="check_date_valid">Definir Fecha de Validez</string>
+	<string name="input_note_msg">Mensaje/Nota para usuarios (opcional)</string>
+	<string name="alert_block_settings">El bloqueo de configuración no garantiza 100% de seguridad</string>
+	<string name="error_empty_name_file">Nombre de archivo no debe quedar vacío</string>
+	
+	<!--- action messages -->
+	<string name="minimize">Minimizar</string>
+	<string name="exit">Salir</string>
+	<string name="yes">Si</string>
+	<string name="no">No</string>
+	<string name="save">Guardar</string>
+	<string name="open">Abrir</string>
+	<string name="more">Mas</string>
+	<string name="cancel">Cancelar</string>
+	<string name="wait">Espera</string>
+	<string name="attention">Atención</string>
+	<string name="ok">Ok</string>
+	<string name="close">Cerrar</string>
+	<string name="open_with">Abrir con</string>
+	<string name="clear_settings">Restaurar</string>
+	<string name="clear_logs">Limpiar Registros</string>
+	<string name="settings_ImportExport">Importar/Exportar</string>
+	<string name="settings_import">Importar configuración</string>
+	<string name="settings_export">Exportar configuración</string>
+	<string name="actived">Ativado</string>
+	<string name="disabled">Desativado</string>
+	
+	<!--Welcome Wizard strings (DJH)-->
+	<string name="wizard_details">Algunos detalles do SocksHttp</string>
+	<string name="wizard_details_msg">SocksHttp es un cliente VPN que funciona através de un servidor SSH. La aplicación en si es inútil sin una configuración, siendo asi apenas es para uso de usuarios avanzados.</string>
+	<string name="payload_details">Palabras claves</string>
+	<string name="payload_details_msg">Actualmente son soportadas las siguientes palabras claves en texto de conexión: [method] [host_port] [ssh] [host] [port] [protocol] [crlf] [cr] [lf] [lfcr] [ua] [random=*;] [rotate=*;] [split] [delay_split]</string>
+	<string name="project_home">Página Principal de Desarrollador:</string>
+	<string name="project_urls">http://t.me/SlipkProjects</string>
+	<string name="third_party_software">Software de terceros</string>
+	<string name="jsocks_version">JSocks v1.0.1: https://jsocks.sourceforge.net</string>
+	<string name="trileadssh2_version">Trilead SSH-2 Build 217: https://github.com/jenkinsci/trilead-ssh2</string>
+	
+	<!--- error messages -->
+	<string name="error_tunnel_service_execution">Servicio en ejecución, detengalo antes</string>
+	<string name="error_no_supported">Función no soportada por su dispositivo</string>
+	<string name="error_invalid_settings">Configuración invalida</string>
+	<string name="error_settings_blocked">Configuración bloqueada</string>
+	<string name="error_delete_file">Falla al borrar archivo</string>
+	<string name="error_file_config_incompatible">Archivo no compatible</string>
+	<string name="error_file_not_found">Archivo no encontrado</string>
+	<string name="error_permission_writer_required">El permiso de escritura es necesario</string>
+	<string name="error_date_selected_invalid">El dia selecionado no puede ser menor al día de hoy</string>
+	<string name="error_export_settings">No fue posible exportar configuración</string>
+	<string name="success_clear_settings">Las Configuraciones fueron restauradas</string>
+	<string name="success_import_settings">Archivo importado</string>
+	<string name="success_export_settings">Configuración exportada</string>
+	
+	<!-- Ainda Falta Traduzir -->
+	<string name="title_agradecimento_especial">Agradecimento especial para</string>
+	<string name="error_userpass_empty">Digite o usuário/senha fornecida pelo criador da configuracão</string>
+	<string name="title_disable_delay_ssh">Desativar TCP Delay</string>
+	<string name="summary_disable_delay_ssh">Se ativo não haverá delays entre requisições, o quê pode melhorar o ping ou até mesmo a velocidade da conexão.</string>
+	<string name="title_tethering_subnet">Tethering Subnet (beta)</string>
+	<string name="summary_tethering_subnet">Habilite se estiver tendo problemas para compartilhar a internet do seu dispositivo.</string>
+	
+</resources>

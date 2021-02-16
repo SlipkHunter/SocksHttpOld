@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+	
+	<group android:id="@+id/grupo1">
+		
+    	<item
+       		android:id="@+id/miPhoneConfg"
+			android:icon="@drawable/ic_wifi_tethering_black_24dp"
+        	android:title="@string/network_mobile"/>
+	
+    	<item android:id="@+id/miSettings"
+        	android:icon="@drawable/ic_settings"
+        	android:title="@string/settings"/>
+	
+	</group>
+	
+	
+	<group android:id="@+id/grupo2">
+		
+		<item android:id="@+id/miSettingsSSH"
+			android:icon="@drawable/ic_cloud_black_24dp"
+			android:title="@string/settings_ssh"/>
+		
+	</group>
+
+	
+	<group android:id="@+id/grupo3">
+
+		<item android:id="@+id/miAvaliarPlaystore"
+			android:icon="@drawable/ic_rate_review_black_24dp"
+			android:title="@string/rate_app"/>
+		
+		<item android:id="@+id/miSendFeedback"
+			android:icon="@drawable/ic_bug_report_black_24dp"
+			android:title="@string/feedback"/>
+		
+		<item android:id="@+id/miAbout"
+			android:icon="@drawable/ic_event_note_black_24dp"
+			android:title="@string/about"/>
+		
+	</group>
+	
+	
+</menu>
